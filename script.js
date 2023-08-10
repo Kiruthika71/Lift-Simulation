@@ -46,7 +46,7 @@ function getFormDetails(e){
     floorscount=document.querySelector("#floorscount").value;
     liftscount=document.querySelector("#liftscount").value;
     console.log("f,l",floorscount,liftscount);
-    if(floorscount==0 || liftscount==0){
+    if(floorscount < 0 || liftscount <0){
         alert("Min floors and lifts should be 1")
         return
     }
